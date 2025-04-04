@@ -1,6 +1,9 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
 import { Button } from "./";
 
+// NOTE: importしたButtonコンポーネントをdefault exportに指定することで、Storybookがこのコンポーネントを認識します。
+// NOTE: argsで指定した値は、すべてのStoryに適用されます。
+// NOTE: argsで指定した値は、各Storyで上書きすることができます。
 export default {
   component: Button,
   args: { children: "送信する" },
